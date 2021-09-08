@@ -1,23 +1,35 @@
 body{
-    background-color:rgb(198, 156, 106);
+    background-color:rgb(192, 170, 141);
 }
 #logo img{
-    width: 60%;
+    width: 15vw;
     height: auto;
 }
 #chocolats img{
-    width: 90%;
+    width: 20vw;
     height: auto;
 }
 #logo{ 
     /*margin-left: 100px;*/
-    padding-top: 40px;
+    padding-top: 2vh;
+    padding-left: 50vh;
+    
 }
 #chocolats{
     /* padding-right: 100px; */
-    padding-top: 20px;
+    padding-top: 2vh;
+    
+    
+}  
+.navbar{
+    border-radius: 30vh;   
 }
-/* .row{ 
-    display: flex;
-    justify-content:space-around;
-}*/
+#barre{
+   color: rgb(49, 45, 45); 
+}
+@media(max-width: 785px){
+    #logo{
+
+    }
+    
+}
