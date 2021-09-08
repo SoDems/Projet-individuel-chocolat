@@ -1,31 +1,47 @@
 body{
-    background-color:rgb(192, 170, 141);
+    background-color:rgb(165, 159, 151);
 }
 /*----------------------------HEADER---------------------------*/
 #logo img{
-    width: 15vw;
+    width: 30vw;
     height: auto;
 }
-#chocolats img{
-    width: 20vw;
-    height: auto;
+#logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
-#logo{ 
-    /*margin-left: 100px;*/
-    padding-top: 2vh;
-    padding-left: 50vh;
-    
-}
-#chocolats{
-    /* padding-right: 100px; */
-    padding-top: 2vh;
-    
-    
-}  
 .navbar{
-    border-radius: 30vh;   
+   margin-left: 10vh;
+   margin-right: 10vh;
+   border-radius: 5vh;
+   padding-left: 15vh;
 }
-#barre{
-   color: rgb(49, 45, 45); 
+.nav-item{
+   padding-left: 8vh;
 }
+
 /*----------------------------footer----------------*/
+#lapin-masque img{
+    width: 15vh;
+    height: auto;
+    border-image: white 30;
+}
+#lapin-masque{
+    padding-left: 15vh;
+   
+}
+h2{
+    font-size: 2vh;
+    padding-left: 30vh;
+}
+h1{
+    text-align: center;
+}
+p{
+    padding-left: 15vh;
+}
+#carte-gps{
+    padding-left: 20vh;
+}
