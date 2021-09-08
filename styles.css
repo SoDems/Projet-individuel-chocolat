@@ -1,0 +1,23 @@
+body{
+    background-color:rgb(198, 156, 106);
+}
+#logo img{
+    width: 60%;
+    height: auto;
+}
+#chocolats img{
+    width: 90%;
+    height: auto;
+}
+#logo{ 
+    /*margin-left: 100px;*/
+    padding-top: 40px;
+}
+#chocolats{
+    /* padding-right: 100px; */
+    padding-top: 20px;
+}
+/* .row{ 
+    display: flex;
+    justify-content:space-around;
+}*/
