@@ -21,27 +21,122 @@ body{
 .nav-item{
    padding-left: 8vh;
 }
+/*----------------------------Présentation------*/
+#fevecacao{
+    display: flex;
+}
+#photocacao img{
+    width: 30vh;
+    height: auto;
+    padding-top: 10vh;
+    margin-left: 50vh; 
+}
+#presentation p{
+    margin-top: 20vh;
+    background-color: white;
+    border-radius: 2px;
+}
+
 
 /*----------------------------footer----------------*/
 #lapin-masque img{
     width: 15vh;
     height: auto;
-    border-image: white 30;
 }
 #lapin-masque{
     padding-left: 15vh;
-   
+    display: flex;     
 }
-h2{
+#paragraphe p{
+    padding-left: 8vh;
+    padding-top: 20vh;
+    text-align: justify;
+}
+#lapin-masque h2{
     font-size: 2vh;
-    padding-left: 30vh;
+    padding-left: 5vh;
+    padding-top: 1vh;
 }
 h1{
     text-align: center;
 }
-p{
-    padding-left: 15vh;
-}
 #carte-gps{
-    padding-left: 20vh;
+    padding-top: 10vh; 
+    
+}
+#contact h2{
+    font-size: 3vh;
+    padding-top: 15vh;
+}
+footer{
+    background-color: rgb(122, 179, 172);
+    border-top:rgb(71, 129, 122) solid 2px;
+}
+#telephone img{
+    width: 4vh;
+    height: auto;
+    padding-bottom: 2vh;
+}
+
+#mail-contact img{
+    width: 7vh;
+    height: auto;
+    padding-bottom: 2vh;;
+    
+}
+#mail-commande img{
+    width: 5vh;
+    height: auto;
+    padding-bottom: 2vh;
+
+}
+#fb img{
+    width: 4vh;
+    height: auto;
+   padding-bottom: 2vh;
+}
+/* ---------------------media query */
+
+/* min = à partir de  */
+/* max= jusqu'à de */
+@media(max-width: 768px){
+    #logo img{
+        width: 50vw;
+        height: auto;
+    }  
+    .navbar{
+       margin-left: 5vh;
+       margin-right: 10vh;
+       border-radius: 5vh;
+       padding-left: 15vh;
+      
+    }
+    .nav-item{
+       padding-left: 1vh;
+       font-size: 5vh;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+@media(min-width: 990px){
+    #logo img{
+        width: 30vw;
+        height: auto;
+    }
+    #logo{
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .navbar{
+       margin-left: 10vh;
+       margin-right: 10vh;
+       border-radius: 5vh;
+       padding-left: 15vh;
+    }
+    .nav-item{
+       padding-left: 8vh;
+    }
 }
