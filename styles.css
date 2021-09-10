@@ -4,23 +4,29 @@ body{
 
 /*----------------------------HEADER---------------------------*/
 #logo img{
-    width: 30vw;
+    width: 50vw;
     height: auto;
 }
 #logo{
     display: flex;
     justify-content: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: vh;
+    padding-bottom: 2vh;
 }
 .navbar{
    margin-left: 10vh;
    margin-right: 10vh;
    border-radius: 5vh;
-   padding-left: 15vh;
+   padding-left: 20vh;
+   font-size: 3vh;
 }
 .nav-item{
    padding-left: 8vh;
+}
+.navbar img{
+    width: 25vh;
+    height: auto;
+    padding-left: 1vh;
 }
 /*----------------------------Présentation------*/
 #fevecacao{
@@ -28,18 +34,17 @@ body{
     justify-content: center;
 }
 #photocacao img{
-    width: 28vh;
+    width: 40vh;
     height: auto;
-    padding-top: 10vh;
-    
-    
+    padding-top: 10vh; 
 }
 #presentation p{
-    margin-top: 20vh;
+    margin-top: 30vh;
     background-color: white;
     border-radius: 2px;
     text-align: justify;
     padding-left: 2vh;
+    font-size: 3vh;
 }
 /*-----------------------------carousel Noel--------*/
 h1{
@@ -79,6 +84,14 @@ h1{
     border: 2px solid bisque ;
     margin-bottom: 20vh;
    
+}
+#gammenoel img{
+    width: 80vh;
+    
+}
+#gammenoel{
+    display: flex;
+    justify-content: center;
 }
 
 /*----------------------------footer----------------*/
