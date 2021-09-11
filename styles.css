@@ -10,23 +10,23 @@ body{
 #logo{
     display: flex;
     justify-content: center;
-    padding-top: vh;
-    padding-bottom: 2vh;
+    padding-top: 0.5vh;
+    padding-bottom: 1vh;
 }
 .navbar{
    margin-left: 10vh;
    margin-right: 10vh;
    border-radius: 5vh;
-   padding-left: 20vh;
-   font-size: 3vh;
+   padding-left: 10vh;
+   font-size: 2.4vh;
 }
 .nav-item{
-   padding-left: 8vh;
+   padding-left: 5vh;
 }
 .navbar img{
-    width: 25vh;
+    width: 20vh;
     height: auto;
-    padding-left: 1vh;
+    padding-left: 0.3vh;
 }
 /*----------------------------Présentation------*/
 #fevecacao{
@@ -75,23 +75,36 @@ h1{
     height: auto;
 }
 .row{
-    padding-left: 10vh;
+    padding-left: 15vh;
     padding-bottom: 5vh;
 }
 #marchés{
-    margin-left: 20vh;
-    margin-right: 20vh;
     border: 2px solid bisque ;
     margin-bottom: 20vh;
-   
+    text-align: center;
 }
 #gammenoel img{
-    width: 80vh;
-    
+    width: 70vh;  
 }
 #gammenoel{
     display: flex;
     justify-content: center;
+
+}
+#boutons img{
+    width: 50vh; 
+    margin-left: 25vh; 
+}
+#boutoncommander img{
+    width: 50vh;
+}
+#boutoncommander{
+    display: flex;
+    justify-content: center;
+}
+#commander p{
+    font-size: 3vh;
+    text-align: center;
 }
 
 /*----------------------------footer----------------*/
@@ -194,9 +207,7 @@ footer{
     #photocacao img{
         width: 28vh;
         height: auto;
-        padding-top: 10vh;
-        
-        
+        padding-top: 10vh;  
     }
     #presentation p{
         margin-top: 20vh;
@@ -238,12 +249,20 @@ footer{
         padding-bottom: 5vh;
     }
     #marchés{
-        margin-left: 20vh;
-        margin-right: 20vh;
-        border: 2px solid bisque ;
+        border: 3px solid bisque ;
         margin-bottom: 20vh;
-       
+        border-radius: 10%;
+    } 
+    #marchés p{
+        font-size: 20vh;
     }
+    
+    #bouton{
+        padding-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+    }
+    #bouton
     
     /*----------------------------footer----------------*/
     #lapin-masque img{
@@ -308,9 +327,5 @@ footer{
         margin-top: 5vh;
         font-size: 2vh;
     }
-    #bouton{
-        padding-bottom: 5vh;
-        display: flex;
-        justify-content: center;
-    }
+    
 }
