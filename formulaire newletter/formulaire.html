@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../img/artificial-intelligence-3706562_640.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="./formulaire.css">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <div id="ferme">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+         <div id="formulaire">
+             <h4>Abonnez-vous à notre Newsletter</h4>
+             <p>Inscrivez vous à la newsletter des Chocolats de Fred et bénéficiez d'un bon d'achat de 5% sur toutes vos commandes. </p>
+        </div>  
+<!----------------------- formulaire-------------------------------------->
+        
+        <div id="flex">
+            <form action="" method="POST">
+                <div class="row d-flex justify-content-center">
+                    <div id="nom" class="col-12 col-md-3 d-flex flex-column">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="user_name" required>
+                    </div>
+                    <div id="prenom" class="col-12 col-md-3 d-flex flex-column">
+                    <label for="surname">Prénom</label>
+                    <input type="text" id="surname" name="user_surname" required>
+                    </div>
+                    <div id="mails" class="col-12 col-md-3 d-flex flex-column">
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" name="user_mail" required>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-md-5">
+                    <div id="Ville" class="col-12 col-md-2 d-flex flex-column">
+                        <label for="ville">ville</label>
+                        <input type="ville" id="ville" name="user_ville" required>
+                    </div>
+                    <div id="Pays" class="col-12 col-md-2 d-flex flex-column">
+                        <label for="pays">Pays</label> 
+                        <input type="Pays" id="pays" name="user-pays" required>                   
+                    </div>
+                    <div id="code" class="col-12 col-md-2 d-flex flex-column">
+                        <label for="code">Code Postal</label>
+                        <input type="code" id="code" name="user_code" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">J’accepte de recevoir cette newsletter et je comprends que je peux me désabonner facilement à tout moment.</label>
+                      </div>
+                </div>
+                    <div class="col-12 d-flex justify-content-center mt-5">
+                        <button type="button" class="btn  btn-dark" data-bs-toggle="popover" title="Envoyer" data-bs-content="Désolé, ce site et en cours de construction.">Envoyer</button>
+                    </div>  
+                </div> 
+            </form>     
+        </div>        
+        <footer>
+           
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="../app.js/app.js"></script>
+    </body>
+</html>
