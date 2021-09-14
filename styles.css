@@ -18,7 +18,7 @@ body{
    margin-right: 10vh;
    border-radius: 5vh;
    padding-left: 5vh;
-   font-size: 2.4vh;
+   font-size: 2.6vh;
 }
 .nav-item{
    padding-left: 5vh;
@@ -126,7 +126,7 @@ h1{
 }
 #paragraphe p{
     padding-left: 15vh;
-    padding-top: 2vh;
+    padding-top: 5vh;
     text-align: justify;
     font-size: 15px;
 }
@@ -137,14 +137,17 @@ h1{
 }
 #contact h2{
     font-size: 3vh;
-    padding-top: 3vh;
+    padding-top: 10vh;
+}
+#contact p{
+    font-size: 2.3vh;
 }
 footer{
     background-color: rgb(122, 179, 172);
     border-top:rgb(71, 129, 122) solid 2px;
 }
 #fb img{
-    width: 3vh;
+    width: 5vh;
     height: auto;
     padding-top: 2vh;
 }
@@ -159,10 +162,8 @@ footer{
     display: flex;
     justify-content: center;
 }
-.modal-body{
-    background-color:rgb(165, 159, 151);
-    margin-left: none;
-}
+
+    
 
 
 
@@ -296,12 +297,6 @@ footer{
         width: 25vh;
         height: auto;
     }
-    #boutons img{
-        width: 30vh; 
-    }
-    #boutoncommander img{
-        width: 30vh;
-    }
     #commander p{
         font-size: 2vh;
         text-align: center;
@@ -323,11 +318,13 @@ footer{
     #contact h2{
         font-size: 2.7vh;
         padding-top: 3vh;
+        padding-left: 2 
     }
     .btn{
         margin-left: 14vh;
         margin-top: 5vh;
-        font-size: 1.2vh;
+        font-size: 1.2vh; 
+        
     }
     #contact p{
         font-size:1.5vh;
@@ -389,17 +386,14 @@ footer{
         width: 22vh;
         height: auto;
     }
-    #boutons img{
-        width: 20vh; 
-    }
-    #boutoncommander img{
-        width: 20vh;
-    }
     #commander p{
         font-size: 1.5vh;
-        text-align: justify;
-        
+        text-align: justify;   
     }
+   .btn{
+       width: 20vh;
+       margin-right: 15vh;
+   }
     #evenements{
         margin-bottom: 8vh;
     }
@@ -415,10 +409,18 @@ footer{
         margin-left: 14vh;
         margin-top: 5vh;
         font-size: 1vh;
- 
     }
     #contact p{
-        font-size:1.5vh;
+        font-size:1.5vh; 
+        display: flex; 
+        justify-content: center;
+        padding-bottom: 1vh; 
+        text-align: center;
+    }
+    #contact h2{
+        display: flex;
+        justify-content: center;
+        
     }
     #paragraphe p{
         font-size: 1.9vh;
@@ -427,5 +429,7 @@ footer{
         width: 100%;
         height: auto;
         padding-top: 2vh;
+        padding-left: 7vh
     }
+    
 }
