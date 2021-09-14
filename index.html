@@ -22,7 +22,7 @@
         </div>
         <!----------------------NAVBAR------------------------------------------->
         <!-- <div class="col-12 col-md-12"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container-fluid">
                 <img src="photo chocolat/petit logo.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -71,11 +71,11 @@
         </div>
 
         <!-- -----------------carousel Noel------- -->
-        <div id="gammenoel">
-            <img src="photo chocolat/Gamme noel.png" alt="" id="gammenoel">
+        <div class="gammenoel">
+            <img src="photo chocolat/Gamme noel.png" alt="" class="gammenoel">
         </div>
         <div class="d-flex justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel noel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./photo noel/puzzle pere noel.jpg" class="d-block w-100" alt="...">
@@ -111,12 +111,12 @@
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Précédent</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Suivant</span>
                 </button>
             </div>
         </div>
@@ -174,11 +174,11 @@
             </div>
         </div>
         <!-- ----------------Carousel paques -->
-        <div id="gammenoel">
-            <img src="photo chocolat/Gamme paques.png" alt="" id="gammepaques">
+        <div class="gammenoel">
+            <img src="photo chocolat/Gamme paques.png" alt="" class="gammepaques">
         </div>
         <div class="d-flex justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel paques" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./photo paques/grand oeuf.jpg" class="d-block w-100" alt="...">
@@ -217,12 +217,12 @@
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Précédent</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Suivant</span>
                 </button>
             </div>
         </div>
@@ -279,11 +279,11 @@
             </div>
         </div>
         <!-----------------carousel permanent -->
-        <div id="gammenoel">
-            <img src="photo chocolat/Gamme permanente.png" alt="" id="gammepermanente">
+        <div class="gammenoel">
+            <img src="photo chocolat/Gamme permanente.png" alt="" class="gammepermanente">
         </div>
         <div class="d-flex justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel permanent" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./photo permanente/tablette (2).jpg" class="d-block w-100" alt="...">
@@ -307,12 +307,12 @@
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Précédent</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Suivant</span>
                 </button>
             </div>
         </div>
@@ -376,7 +376,7 @@
                 <a href="./photo chocolat/comment commander.pdf" class="btn btn-success" target="_blank">Comment commander ?
                 </a>
             </div>
-            <div id="gammenoel">
+            <div class="gammenoel">
                 <img src="./photo chocolat/Evenements.png" alt="">
             </div>
             <div id="evenements" class="col-10 col-md-11">
@@ -395,8 +395,9 @@
         <div class="row">
             <div id="paragraphe" class="col-10 col-md-4">
                 <p>
-                    Je vous accueille dans ma boutique<br> pour une dégustation de chocolats.<br> Veuillez me contacter
-                    par mail ou <br>par téléphone pour fixer un rendez-vous.
+                    Je vous accueille dans ma boutique<br> pour une dégustation de chocolats.<br> Le site est ouvert la semaine ainsi<br>
+                     que les week-end et les jours fériés <strong><br>uniquement sur rendez-vous.</strong><br>Veuillez me contacter
+                    par mail ou <br>par téléphone.
                 </p>
                 <div id="masque" class="col-5 col-md-3">
                     <div id="lapin-masque">
@@ -406,7 +407,7 @@
                     <div id="newsletter">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#modal-newsletter">
                             Abonnez-vous à la newsletter
                         </button>
                         <!-- Modal  -->
@@ -633,7 +634,7 @@
                                     d'utilisation et un graphisme plus agréable, nous vous recommandons de recourir à
                                     des navigateurs modernes comme Safari, Firefox, Chrome,...<br></p>
                                 <h3>Informations et exclusion</h3>
-                                <p> Natural net met en œuvre tous les moyens dont elle dispose, pour assurer une
+                                <p> [...] met en œuvre tous les moyens dont elle dispose, pour assurer une
                                     information fiable et une mise à jour fiable de ses sites internet. Toutefois, des
                                     erreurs ou omissions peuvent survenir. L'internaute devra donc s'assurer de
                                     l'exactitude des informations auprès de Natural net, et signaler toutes

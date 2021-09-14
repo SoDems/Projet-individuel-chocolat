@@ -92,10 +92,10 @@ h1{
     padding-bottom: 5vh;
     padding-top: 3vh;
 }
-#gammenoel img{
+.gammenoel img{
     width: 70vh;  
 }
-#gammenoel{
+.gammenoel{
     display: flex;
     justify-content: center;
 
@@ -202,7 +202,7 @@ footer{
         padding-left: 1.5vh;
         padding-bottom: 4vh;
     }
-    #gammenoel img{
+    .gammenoel img{
         width: 60vh;  
     }
     #boutons img{
@@ -278,7 +278,7 @@ footer{
         padding-left: 1.5vh;
         padding-bottom: 4vh;
     }
-    #gammenoel img{
+    .gammenoel img{
         width: 50vh;  
     }
     #photonoel img{
@@ -366,7 +366,7 @@ footer{
         padding-left: 1.5vh;
         padding-bottom: 4vh;
     }
-    #gammenoel img{
+    .gammenoel img{
         width: 40vh;  
     }
     #photonoel img{
