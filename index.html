@@ -16,45 +16,47 @@
 
 <body>
     <!---------------------HEADER-------------------------------------------->
-    <header>        
+    <header>
+               
         <div id="logo" class="col-12 col-md-12">
             <img src="./photo chocolat/logo sans fond.png" alt="">
         </div>
         <!----------------------NAVBAR------------------------------------------->
         <!-- <div class="col-12 col-md-12"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-                <img src="photo chocolat/petit logo.png" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#presentation">Présentation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gammenoel">Gamme Noël</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gammepaques">Gamme Pâques</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gammepermanente">Gamme permanente</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#evenements">Evènements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mecontacter">Me contacter</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- </div>   -->
     </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="photo chocolat/petit logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentation">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel-noel">Gamme Noël</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel-paques">Gamme Pâques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel-permanent">Gamme permanente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#evenements">Evènements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mecontacter">Me contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- </div>   -->
+    
     <!---------------------- presentation------------------------->
     <section>
         <div id="fevecacao">
@@ -71,12 +73,12 @@
         </div>
 
         <!-- -----------------carousel Noel------- -->
-        <div class="gammenoel">
+        <div id="carousel-noel" class="gammenoel">
             <img src="photo chocolat/Gamme noel.png" alt="" class="gammenoel">
         </div>
         <div class="d-flex justify-content-center">
-            <div id="carousel noel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+            <div  id="car-no" class="carousel slide" data-bs-ride="carousel">
+                <div  class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./photo noel/puzzle pere noel.jpg" class="d-block w-100" alt="...">
                     </div>
@@ -108,12 +110,12 @@
                         <img src="./photo noel/cup noel.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-prev" type="button" data-bs-target="#car-no"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-next" type="button" data-bs-target="#car-no"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Suivant</span>
@@ -122,63 +124,214 @@
         </div>
         <div class="row">
             <div id="photonoel" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/grand marnier.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button"  class="modal-btn" data-bs-toggle="modal" data-bs-target="#card1">
+                    <img src="./photo noel/grand marnier.jpg" alt="photo chocolat grand marnier">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Grand Marnier</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Grand marnier.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
+                
             </div>
             <div id="photonoel2" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/marron.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card2">
+                    <img src="./photo noel/marron.jpg" alt="Photo marron glacé">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Marron</h5>
+                        <h3> <span class="badge bg-dark">6.00€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Marron.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel3" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/orangettes.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card3">
+                    <img src="./photo noel/orangettes.jpg" alt="Photo orangette noire">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Orangettes</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Orangettes.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel4" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/palais cafe.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card4">
+                    <img src="./photo noel/palais cafe.jpg" alt="Photo palais café">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Palais café</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Palais café.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
         </div>
         <div class="row">
             <div id="photonoel" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/palais caramel.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card5">
+                    <img src="./photo noel/palais caramel.jpg" alt="Photo chocolat palais caramel">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Palais caramel</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/palais caramel.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel2" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/palais miel.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card6">
+                    <img src="./photo noel/palais miel.jpg" alt="Photo chocolat palais miel">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Palais miel</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/palais miel.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel3" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/griotte.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card7">
+                    <img src="./photo noel/griotte.jpg" alt="Photo griotte">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Griotte</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Griottes.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel4" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo noel/praliné.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button"  class="modal-btn" data-bs-toggle="modal" data-bs-target="#card8">
+                    <img src="./photo noel/praliné.jpg" alt="Photo chocolat praliné">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Praliné</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/praline.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="boutons" class="col-12">
-                <a href="./Bon-de-commande-2015-2016.pdf" class="btn btn-success" target="_blank">Télécharger le bon de
-                    commande
-
+                <a href="./Bon-de-commande-2015-2016.pdf" class="btn btn-dark" target="_blank">Télécharger le bon de commande (PDF)
                 </a>
-                <a href="./edition-catalogue-chocolat-2021-A4-complet.pdf" class="btn btn-success"
-                    target="_blank">Télécharger le catalogue
+                <a href="./edition-catalogue-chocolat-2021-A4-complet.pdf" class="btn btn-dark"
+                    target="_blank">Télécharger le catalogue (PDF)
                 </a>
             </div>
         </div>
         <!-- ----------------Carousel paques -->
-        <div class="gammenoel">
+        <div id="carousel-paques" class="gammenoel">
             <img src="photo chocolat/Gamme paques.png" alt="" class="gammepaques">
         </div>
         <div class="d-flex justify-content-center">
-            <div id="carousel paques" class="carousel slide" data-bs-ride="carousel">
+            <div  id="car-pa"class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./photo paques/grand oeuf.jpg" class="d-block w-100" alt="...">
@@ -214,12 +367,12 @@
                         <img src="./photo paques/Vache lait.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-prev" type="button" data-bs-target="#car-pa"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-next" type="button" data-bs-target="#car-pa"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Suivant</span>
@@ -228,62 +381,214 @@
         </div>
         <div class="row">
             <div id="photonoel" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/Oeufs coquille 2.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button"   class="modal-btn" data-bs-toggle="modal" data-bs-target="#card9">
+                    <img src="./photo paques/Oeufs coquille 2.jpg" alt="Photo oeuf coquille de Bresse praliné">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Oeuf de Bresse</h5>
+                        <h3> <span class="badge bg-dark">4.00€ l'un - 6.00 avec le coquetier</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/oeuf de bresse.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div id="photonoel2" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/oeuf praline.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card10">
+                    <img src="./photo paques/oeuf praline.jpg" alt="Photo chocolat oeuf praliné">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Oeuf praliné</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/oeufs praliné.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div id="photonoel3" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/oeuf feuilletine.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card11">
+                    <img src="./photo paques/oeuf feuilletine.jpg" alt="Photo chocolat oeuf feuilletine">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Oeuf feuilletine</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/oeuf feuilletine.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div id="photonoel4" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/oeuf coco.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button"  class="modal-btn" data-bs-toggle="modal" data-bs-target="#card12">
+                    <img src="./photo paques/oeuf coco.jpg" alt="Photo oeuf coco">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Oeuf coco</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/oeuf coco.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
             <div id="photonoel" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/oeuf caramel fondant.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card13">
+                    <img src="./photo paques/oeuf caramel fondant.jpg" alt=" Photo Oeuf caramel mou">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Oeuf caramel mou</h5>
+                        <h3> <span class="badge bg-dark">5.20€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/oeuf caramel.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel2" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/Friture.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card14">
+                    <img src="./photo paques/Friture.jpg" alt="Photo chocolat friture">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Friture</h5>
+                        <h3> <span class="badge bg-dark">4.00€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/friture.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel3" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/clochette.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card15">
+                    <img src="./photo paques/clochette.jpg" alt=" Photo Clochette chocolat">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Clochette</h5>
+                        <h3> <span class="badge bg-dark">0.90 l'une</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/clochette.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel4" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo paques/cb enfants.jpg" alt="">
-                </a>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card16">
+                    <img src="./photo paques/cb enfants.jpg" alt="Photo carte cb">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carte CB</h5>
+                        <h3> <span class="badge bg-dark">2.80 l'une</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/carte cb enfant.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="boutons" class="col-12">
-                <a href="./Bon-de-commande-2015-2016.pdf" class="btn btn-success" target="_blank">Télécharger le bon de
-                    commande
+                <a href="./Bon-de-commande-2015-2016.pdf" class="btn btn-dark" target="_blank">Télécharger le bon de
+                    commande (PDF)
                 </a>
-                <a href="./edition-catalogue-chocolat-2021-A4-complet.pdf" class="btn btn-success"
-                    target="_blank">Télécharger le catalogue
+                <a href="./edition-catalogue-chocolat-2021-A4-complet.pdf" class="btn btn-dark"
+                    target="_blank">Télécharger le catalogue (PDF)
                 </a>
             </div>
         </div>
         <!-----------------carousel permanent -->
-        <div class="gammenoel">
+        <div id="carousel-permanent" class="gammenoel">
             <img src="photo chocolat/Gamme permanente.png" alt="" class="gammepermanente">
         </div>
         <div class="d-flex justify-content-center">
-            <div id="carousel permanent" class="carousel slide" data-bs-ride="carousel">
+            <div id="car-per" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./photo permanente/tablette (2).jpg" class="d-block w-100" alt="...">
@@ -304,12 +609,12 @@
                         <img src="./photo permanente/cb 2017.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-prev" type="button" data-bs-target="#car-per"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-next" type="button" data-bs-target="#car-per"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Suivant</span>
@@ -318,54 +623,205 @@
         </div>
         <div class="row">
             <div id="photonoel" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/pastille pavot.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card17">
+                    <img src="./photo permanente/pastille pavot.jpg" alt="Photo pastilles chocolat-pavot">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pastilles chocolat-pavot-bleu </h5>
+                        <h3> <span class="badge bg-dark">4.50€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/pavot.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel2" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/pastille saveur.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button"  class="modal-btn" data-bs-toggle="modal" data-bs-target="#card18">
+                    <img src="./photo permanente/pastille saveur.jpg" alt="Photo pastilles chocolat-carvi">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pastilles chocolat-carvi</h5>
+                        <h3> <span class="badge bg-dark">4.50€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/pastille cumin.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel3" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/pate de fruit abricot.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card19">
+                    <img src="./photo permanente/pate de fruit abricot.jpg" alt="Photo pâte de fruits">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pâte de fruits abricot</h5>
+                        <h3> <span class="badge bg-dark">4.00€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/pate de fruits.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel4" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/brique.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card20">
+                    <img src="./photo permanente/palet cafe.jpg" alt="Photo pastilles chocolat-café">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pastilles chocolat-café</h5>
+                        <h3> <span class="badge bg-dark">4.50€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/pastille cafe.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
-
         </div>
         <div class="row">
             <div id="photonoel" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/palet cafe.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button"  class="modal-btn" data-bs-toggle="modal" data-bs-target="#card21">
+                    <img src="./photo permanente/pastille amande.jpg" alt="Photo pastilles chocolat-amandes">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pastilles chocolat-amandes</h5>
+                        <h3> <span class="badge bg-dark">4.00€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/pastille amande.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel2" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/pastille amande.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card22">
+                    <img src="./photo permanente/mendiants.jpg" alt="Photo chocolat mendiant">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mendiant</h5>
+                        <h3> <span class="badge bg-dark">6.00€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Mendiant.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel3" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/mendiants.jpg" alt="">
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card23">
+                    <img src="./photo permanente/callets.jpg" alt="Photo chocolat callet">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Callets</h5>
+                        <h3> <span class="badge bg-dark">3.50€ les 100g</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./card cliquable/Callet.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
             </div>
             <div id="photonoel4" class="col-6 col-md-3">
-                <a href="./photo chocolat/grand marnier card.jpg">
-                    <img src="./photo permanente/callets.jpg" alt="">
-                </a>
+               <!-- Button trigger modal -->
+               <button type="button" class="modal-btn"  data-bs-toggle="modal" data-bs-target="#card24">
+                <img src="./photo permanente/brique.jpg" alt="Photo chocolat forme brique">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="card24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brique</h5>
+                    <h3> <span class="badge bg-dark">5.50€ les 100g</span></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./card cliquable/brique.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>   
             </div>
             <div id="boutons" class="col-12">
-                <a href="./Bon-de-commande-2015-2016.pdf" class="btn btn-success" target="_blank">Télécharger le bon de
-                    commande
+                <a href="./Bon-de-commande-2015-2016.pdf" class="btn btn-dark" target="_blank">Télécharger le bon de
+                    commande (PDF)
                 </a>
-                <a href="./edition-catalogue-chocolat-2021-A4-complet.pdf" class="btn btn-success"
-                    target="blank">Télécharger le catalogue
+                <a href="./edition-catalogue-chocolat-2021-A4-complet.pdf" class="btn btn-dark"
+                    target="blank">Télécharger le catalogue (PDF)
                 </a>
             </div>
             <div id="commander">
@@ -373,15 +829,44 @@
                     télécharger ci-dessus ainsi que le bon de commande.</p>
             </div>
             <div id="boutoncommander" class="col-12">
-                <a href="./photo chocolat/comment commander.pdf" class="btn btn-success" target="_blank">Comment commander ?
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#commande">
+                    Comment commander ?
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="commande" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Comment commander ?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1>Comment commander ?</h1>
+                            <h2>Commander</h2><br><br>
+                            <p>Pour commander, vous pouvez télécharger le bon de commande ainsi que le catalogue avec tous les produits que je propose en cliquant sur le lien « bon de commande » et « catalogue » que vous trouverez après les photos de chaque gamme. Le bon de commande étant en ligne et afin de limiter le gaspillage de papier et les déchets, je vous invite à commander sur commandes@chocolatsdefred.fr . Vous préciserez vos nom, prénom, votre adresse et votre numéro de portable. Notez chaque référence et la quantité souhaitée. A réception, je vous confirmerais par mail la prise en compte de votre commande. Nous devons essayer à chaque moment de faire des gestes simples pour la planète. En cas d’impossibilité par mail, vous pouvez m’envoyer votre bon de commande à cette adresse :<br><br><span class="adresse"> Frédéric DESMARIS<br> 19, rue du Grand Sillon<br> 01340 MONTREVEL EN BRESSE <br><br></span>Vous pouvez venir à mon atelier pour récupérer votre commande et profiter d’une dégustation.</p><br> 
+                            <h2>Frais de port</h2><br> 
+                            <p>Les frais d’envoi restent à votre charge. Vous pouvez évaluer le montant à l’aide du tarifs de la poste ( laposte.fr ) en rajoutant environ 200 gr pour le carton de l’expédition. Les tarifs affichés sont HT, tenir compte de la TVA de 20,6%.</p><br> 
+                            <h2>Moyens de paiement</h2><br>
+                            <p>Le paiement peut se faire par : Carte Bancaire / sans contact, Virement Sepa, LyPay, Espèces, Chèque / Chèque Tonic.</p><br>
+                            <h2>Des problèmes</h2><br>
+                            <p>Si vous avez des difficultés dans la procédure, je suis entièrement disponible pour vous aider par téléphone au 06 50 60 44 24. N’hésitez pas à laisser un message sur le répondeur, je vous rappellerais dans les plus brefs délais. Pour demande de devis ou autres renseignements, contactez-moi par mail à contact@chocolatsdefred.fr .</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="gammenoel">
+            <div id="evenements" class="gammenoel">
                 <img src="./photo chocolat/Evenements.png" alt="">
             </div>
-            <div id="evenements" class="col-10 col-md-11">
+            <div id="evenement" class="col-10 col-md-11">
                 <h1>Marchés de Noël</h1>
-                <p>Vous me trouverez lors de manifestations pour découvrir mes variétés de choclats de Noël.<br>
+                <p>Vous me trouverez lors de manifestations pour découvrir mes variétés de chocolats de Noël.<br>
                     Je pourrais répondre à toutes vos questions.<br><br>
                     Dimanche 10 octobre 2021 - Salle des fêtes de Cras-sur-Reyssouze - 9h00-18h00<br>
                     Samedi 11 décembre 2021 - Sou des écoles de Malafretaz - 9H00-13H00<BR>
@@ -411,7 +896,7 @@
                             Abonnez-vous à la newsletter
                         </button>
                         <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="modal-newsletter" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -502,40 +987,7 @@
                 </div>
             </div>
         </div>
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <img src="photo chocolat/petit logo.png" alt="">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#presentation">Présentation</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#gammenoel">Gamme Noël</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#gammepaques">Gamme Pâques</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#gammepermanente">Gamme permanente</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#evenements">Evènements</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#mecontacter">Me contacter</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+            
         <div class="row">
             <div id="boutonmention">
                 <!-- Button trigger modal -->
@@ -547,7 +999,7 @@
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title">Modal title</h5>
+                          <h5 class="modal-title">Mentions légales</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">             
