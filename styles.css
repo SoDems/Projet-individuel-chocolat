@@ -11,6 +11,12 @@ h1{
 }
 h2{
     font-size: 3vh;
+    font-family: rockwell hand itc;
+    font-style: italic ;
+    
+}
+p{
+    font-size: 2vh;
 }
 /*----------------------------HEADER---------------------------*/
 #logo img{
@@ -93,10 +99,11 @@ h2{
     padding-bottom: 5vh;
 } 
 #evenement{
-    border: 6px solid rgb(201, 104, 184) ;
+    border: 6px solid rgb(63, 104, 58) ;
     margin-bottom: 10vh;
     text-align: center;
-    
+    color: black;
+   
 }
 #evenement p{
     font-size: 3vh;
@@ -105,6 +112,7 @@ h2{
 #evenement h1{
     padding-bottom: 5vh;
     padding-top: 3vh;
+    color: black;
 }
 .gammenoel img{
     width: 70vh;  
@@ -232,28 +240,40 @@ h2{
     display: flex;
     justify-content: center;
 }
+#modal-newsletter h3{
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    
+}
+#modal-newsletter label{
+    font-size: 3vh;
+    padding-top: 5vh;
+}
+#modal-newsletter input{
+    height: 5vh;
+}
+#modal-newsletter input::placeholder{
+    font-size: 2vh;
+}
+#btn-formulaire{
+    width: 5vh;
+}
+.form-check input{
+    width: 5vh;
+}
+
 
 /*----------------------------footer----------------*/
+
 #lapin-masque img{
-    width: 15vh;
-    height: auto;
-    padding-top: 3vh;
+    width: 5vh;
 }
-#lapin-masque{
-    padding-left: 15vh;
-    display: flex;     
-}
-#paragraphe p{
-    padding-left: 15vh;
-    padding-top: 5vh;
-    text-align: justify;
-    font-size: 15px;
-}
-#lapin-masque h2{
-    font-size: 2vh;
-    padding-left: 4vh;
-    padding-top: 4vh;
-}
+
+
+
 #contact h2{
     font-size: 3vh;
     padding-top: 10vh;
@@ -262,8 +282,13 @@ h2{
     font-size: 2.3vh;
 }
 footer{
-    background-color: rgb(0, 0, 0);
-    border-top:rgb(201, 104, 184) solid 4px;
+    background-color: rgb(63, 104, 58);
+    border-top:rgb(0, 0, 0) solid 5px;
+}
+footer h1{
+    color: black;
+    font-size: 8vh;
+
 }
 #fb img{
     width: 5vh;
@@ -284,6 +309,14 @@ footer{
 label{
     color: white;
 }
+footer h1{
+    padding-bottom: 5vh;
+    
+}
+footer row{
+    display: flex;
+}
+    
 
     
 
