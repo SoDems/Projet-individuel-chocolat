@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="./Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./Bootstrap/bootstrap.css.map">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./photo chocolat/petit logo.png">
+    <link rel="icon" href="./photo chocolat/petit logo map bleu.png">
+    <style>
+        .link{
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,14 +24,14 @@
     <header>
                
         <div id="logo" class="col-12 col-md-12">
-            <img src="./photo chocolat/logo sans fond.png" alt="">
+            <img src="./photo chocolat/logo sans fond bleu.png" alt="">
         </div>
         <!----------------------NAVBAR------------------------------------------->
         <!-- <div class="col-12 col-md-12"> -->
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <img src="photo chocolat/petit logo.png" alt="">
+            <img src="./photo chocolat/petit logo map bleu.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,13 +73,14 @@
                     Je vous propose des gammes de chocolats fins ainsi que des confiseries de luxe, élaborées<br> à
                     partir de produits de qualité. Chocolats de Noël et chocolats de Pâques sont à la fête....<br>
                     Je vous invite à les découvrir à travers mon site.
-                    Je propose également des tarifs pour les <br> associations, les comités d'entreprises etc...</p>
+                    Je propose également des tarifs pour les <br> associations, les comités d'entreprises etc...<br><br>
+                    Je vous accueille dans mon labo pour découvrir, déguster et acheter même au dernier moment.... <br><br>Les jours d'ouverture nétant pas réguliers, contactez-moi avant au 06 50 60 44 24 .<br></p>
             </div>
         </div>
 
         <!-- -----------------carousel Noel------- -->
         <div id="carousel-noel" class="gammenoel">
-            <img src="photo chocolat/Gamme noel.png" alt="" class="gammenoel">
+            <img src="./photo chocolat/Gamme noel map bleu.png" alt="" class="gammenoel">
         </div>
         <div class="d-flex justify-content-center">
             <div  id="car-no" class="carousel slide" data-bs-ride="carousel">
@@ -328,7 +334,7 @@
         </div>
         <!-- ----------------Carousel paques -->
         <div id="carousel-paques" class="gammenoel">
-            <img src="photo chocolat/Gamme paques.png" alt="" class="gammepaques">
+            <img src="./photo chocolat/Gamme paques map bleu.png" alt="" class="gammepaques">
         </div>
         <div class="d-flex justify-content-center">
             <div  id="car-pa"class="carousel slide" data-bs-ride="carousel">
@@ -391,7 +397,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Oeuf de Bresse</h5>
-                        <h3> <span class="badge bg-dark">4.00€ l'un - 6.00 avec le coquetier</span></h3>
+                        <h3> <span class="badge bg-dark">4.00€ l'un - 6.00€ avec le coquetier</span></h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -585,7 +591,7 @@
         </div>
         <!-----------------carousel permanent -->
         <div id="carousel-permanent" class="gammenoel">
-            <img src="photo chocolat/Gamme permanente.png" alt="" class="gammepermanente">
+            <img src="./photo chocolat/Gamme permanente map bleue.png" alt="" class="gammepermanente">
         </div>
         <div class="d-flex justify-content-center">
             <div id="car-per" class="carousel slide" data-bs-ride="carousel">
@@ -862,7 +868,7 @@
                 </div>
             </div>
             <div id="evenements" class="gammenoel">
-                <img src="./photo chocolat/Evenements.png" alt="">
+                <img src="./photo chocolat/Evenements map bleu.png" alt="">
             </div>
             <div id="evenement" class="col-10 col-md-11">
                 <h1>Marchés de Noël</h1>
@@ -877,21 +883,267 @@
     <!------------------------footer--------------------------->
     <footer>
         <h1>Me contacter</h1>
-            
-        <div id="paragraphe" class="col-10 col-md-4">
-            <p>
-                Je vous accueille dans ma boutique<br> pour une dégustation de chocolats.<br> Le site est ouvert la semaine ainsi<br>
-                 que les week-end et les jours fériés <strong><br>uniquement sur rendez-vous.</strong><br>Veuillez me contacter
-                par mail ou <br>par téléphone.
-            </p>
-            
+        <div class="row">
+            <div id="paragraphe" class="col-10 col-md-4">
+                <p>
+                    Je vous accueille dans ma boutique<br> pour une dégustation de chocolats.<br> Le site est ouvert la semaine ainsi<br>
+                     que les week-end et les jours fériés <strong><br>uniquement sur rendez-vous.</strong><br>Veuillez me contacter
+                    par mail ou <br>par téléphone.
+                </p>
+            </div>
+            <div id="masque" class="col-10 col-md-4">
                 <div id="lapin-masque">
                     <img src="./photo chocolat/easter-4976728_1920.jpg" alt="">
                     <h2>Port du masque obligatoire</h2>
                 </div>
+            </div> 
+            
+        <div id="newsletter" class="col-10 col-md-4">
+            <div id="text-newsletter">
+                <p>
+                    Afin d'être informé des nouveautés chocolatées ainsi que des promos, n'hésitez pas à vous abonner à la newsletter.
+                </p>
+            </div>
+            <!-- Button trigger modal -->
+            
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                    data-bs-target="#modal-newsletter">
+                    Cliquer pour s'abonner
+                </button>
+            
+            <!-- Modal  -->
+            <div class="modal fade" id="modal-newsletter" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel">Newsletter</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <h3>Inscrivez vous à la newsletter et bénéficiez d'un bon
+                            d'achat de 5% sur toutes vos commandes.</h3>
+                        <div class="modal-body">
+                            <div class="row d-flex justify-content-center">
+                                <div id="nom" class="col-12 col-md-4 d-flex flex-column">
+                                    <label for="name">Nom</label>
+                                    <input type="text" id="name" name="user_name" placeholder="Dupondt" required>
+                                </div>
+                                <div id="prenom" class="col-12 col-md-4 d-flex flex-column">
+                                    <label for="surname">Prénom</label>
+                                    <input type="text" id="surname" name="user_surname" placeholder="Tom" required>
+                                </div>
+                                <div id="mails" class="col-12 col-md-4 d-flex flex-column">
+                                    <label for="mail">E-mail</label>
+                                    <input type="email" id="mail" name="user_mail" placeholder="dupondttom@...fr" required>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center mt-md-5">
+                                <div id="Ville" class="col-12 col-md-3 d-flex flex-column">
+                                    <label for="ville">ville</label>
+                                    <input type="ville" id="ville" name="user_ville" placeholder="Paris" required>
+                                </div>
+                                <div id="Pays" class="col-12 col-md-3 d-flex flex-column">
+                                    <label for="pays">Pays</label>
+                                    <input type="Pays" id="pays" name="user-pays" placeholder="France" required>
+                                </div>
+                                <div id="code" class="col-12 col-md-3 d-flex flex-column">
+                                    <label for="code">Code Postal</label>
+                                    <input type="code" id="code" name="user_code" placeholder="75 000" required>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" id="bn-news">
+                                 <label class="form-check-label" for="bn-news">J’accepte de
+                                        recevoir cette newsletter et je comprends que je peux me désabonner
+                                        facilement à tout moment.
+                                 </label>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center md-5">
+                                <button type="button" class="btn btn-md btn-secondary" data-bs-toggle="Désolé, le site est en cours de construction" title="Attention" data-bs-content="And here's some amazing content. It's very engaging. Right?">Envoyer</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-           
+        <div class="row">
+            <div id="carte-gps" class="col-10 col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.621923609819!2d5.117659715461646!3d46.33719987912097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f3466c2c229b2d%3A0x5f799943555a4420!2s19%20Rue%20du%20Grand%20Sillon%2C%2001340%20Montrevel-en-Bresse!5e0!3m2!1sfr!2sfr!4v1631136747649!5m2!1sfr!2sfr"
+                    height="350px" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div id="contact" class="col-10 col-md-6">
+                <h2>Les Chocolats de Fred</h2>
+                <p>DESMARIS Frédéric<br>19, rue du Grand Sillon<br>01340 MONTREVEL EN BRESSE</p>
+                <div id="telephone">
+                    <a class="link" href="tel:06 50 60 44 24">06 50 60 44 24
+                    </a>
+                </div>
+                <div id="mail-contact">
+                    <a class="link" href="mailto:contact@chocolatsdefred.fr">
+                        contact@chocolatsdefred.fr
+                    </a>
+                </div>
+                <div id="mail-commande">
+                    <a class="link" href="mailto:commandes@chocolats de fred.fr">
+                        commandes@choclatsdefred.fr
+                    </a>
+                </div>
+                <div id="logo-reseau">
+                    <div id="fb">
+                        <a href="https://fr-fr.facebook.com/chocolatsdefred.fr" target="_blank">
+                            <img src="./photo chocolat/facebook-2429746_1280.png" alt=""
+                                title="cliquer pour découvrir ma page Facebook">
+                        </a>
+                    </div>
+                    <div id="insta">
+                        <a href="https://instagram.com/chocolatsdefred?utm_medium=" target="_blank">
+                            <img src="./photo chocolat/instagram-1581266_640.jpg" alt=""
+                                title="cliquer pour découvrir ma page Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="boutonmention">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-mentions-legales">
+                Mentions légales
+            </button>
+            <!-- Modal -->
+            <div class="modal" tabindex="-1" id="modal-mentions-legales">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Mentions légales</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">             
+                        <h1> Mentions légales</h1>
+                        <h2> Conditions d'utilisation</h2>
+                        <p>
+                                Le site accessible par les url suivants : www.[...........].fr est exploité dans le
+                                respect de la législation française. L'utilisation de ce site est régie par les
+                                présentes conditions générales. En utilisant le site, vous reconnaissez avoir pris
+                                connaissance de ces conditions et les avoir acceptées. Celles-ci pourront êtres
+                                modifiées à tout moment et sans préavis par la société[.....]. Elle ne saurait être
+                                tenu pour responsable en aucune manière d’une mauvaise utilisation du service.
+                         </p>
+                         <h2>Responsable éditorial</h2>
+        
+        
+                         <h2>Limitation de responsabilité</h2>
+                         <p>
+                                Les informations contenues sur ce site sont aussi précises que possibles et le site
+                                est régulièrement remis à jour, mais peut toutefois contenir des inexactitudes, des
+                                omissions ou des lacunes. Si vous constatez une lacune, erreur ou ce qui parait être
+                                un dysfonctionnement, merci de bien vouloir le signaler par email en décrivant le
+                                problème de la manière la plus précise possible (page posant problème, action
+                                déclenchante, type d’ordinateur et de navigateur utilisé, …).<br><br>
+                                Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa
+                                seule responsabilité. En conséquence, [.....] ne saurait être tenu responsable d'un
+                                quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte
+                                de données consécutives au téléchargement.<br><br>
+                                Les photos sont non contractuelles.<br><br>
+                                Les liens hypertextes mis en place dans le cadre du présent site internet en
+                                direction d'autres ressources présentes sur le réseau Internet ne sauraient engager
+                                la responsabilité de [.....].
+                         </p>
+                         <h2>Litiges</h2>
+                         <p>
+                                Les présentes conditions sont régies par les lois françaises et toute contestation
+                                ou litiges qui pourraient naître de l'interprétation ou de l'exécution de celles-ci
+                                seront de la compétence exclusive des tribunaux dont dépend le siège social de la
+                                société [.......]. La langue de référence, pour le règlement de contentieux
+                                éventuels, est le français.
+                         </p>
+                            <h2>Déclaration à la CNIL</h2>
+                            <p>
+                                Conformément à la loi 78-17 du 6 janvier 1978 (modifiée par la loi 2004-801 du 6
+                                août 2004 relative à la protection des personnes physiques à l'égard des traitements
+                                de données à caractère personnel) relative à l'informatique, aux fichiers et aux
+                                libertés, le site a fait l'objet d'une déclaration auprès de la Commission nationale
+                                de l'informatique et des libertés (www.cnil.fr).
+                            </p>
+                            <h2>Droit d'accès</h2>
+                            <p>
+                                En application de cette loi, les internautes disposent d’un droit d’accès, de
+                                rectification, de modification et de suppression concernant les données qui les
+                                concernent personnellement. Ce droit peut être exercé par voie postale auprès de
+                                Natural net 49, Boulevard Antoine Gautier 33000 Bordeaux ou par voie électronique à
+                                l’adresse email suivante : [..........]
+                                Les informations personnelles collectées ne sont en aucun cas confiées à des tiers
+                                hormis pour l’éventuelle bonne exécution de la prestation commandée par
+                                l’internaute.
+                            </p>
+                            <h2>Confidentialité</h2>
+                            <p>
+                                Vos données personnelles sont confidentielles et ne seront en aucun cas communiquées
+                                à des tiers hormis pour la bonne exécution de la prestation.
+                            </p>
+                            <h2>Propriété intellectuelle</h2>
+                            <p>
+                                Tout le contenu du présent site, incluant, de façon non limitative, les graphismes,
+                                images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise
+                                en forme sont la propriété exclusive de la société Natural net à l'exception des
+                                marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.
+                                Toute reproduction, distribution, modification, adaptation, retransmission ou
+                                publication, même partielle, de ces différents éléments est strictement interdite
+                                sans l'accord exprès par écrit de Natural net. Cette représentation ou reproduction,
+                                par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les
+                                articles L.335-2 et suivants du Code de la propriété intellectuelle. Le non-respect
+                                de cette interdiction constitue une contrefaçon pouvant engager la responsabilité
+                                civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiés
+                                pourraient intenter une action en justice à votre encontre.<br><br>
+                            </p>
+                            <h2>Conditions de service</h2>
+                            <p>
+                                Ce site est proposé en langages HTML5 et CSS3, pour un meilleur confort
+                                d'utilisation et un graphisme plus agréable, nous vous recommandons de recourir à
+                                des navigateurs modernes comme Safari, Firefox, Chrome,...<br></p>
+                            <h3>Informations et exclusion</h3>
+                            <p> [...] met en œuvre tous les moyens dont elle dispose, pour assurer une
+                                information fiable et une mise à jour fiable de ses sites internet. Toutefois, des
+                                erreurs ou omissions peuvent survenir. L'internaute devra donc s'assurer de
+                                l'exactitude des informations auprès de Natural net, et signaler toutes
+                                modifications du site qu'il jugerait utile. Natural net n'est en aucun cas
+                                responsable de l'utilisation faite de ces informations, et de tout préjudice direct
+                                ou indirect pouvant en découler.
+                            </p>
+                            <h2>Liens hypertextes</h2>
+                            <p>
+                                Le site internet peuve offrir des liens vers d’autres sites internet ou d’autres
+                                ressources disponibles sur Internet.
+                                Il ne dispose d'aucun moyen pour contrôler les sites en connexion avec ses sites
+                                internet. Il ne répond pas de la disponibilité de tels sites et sources externes, ni
+                                ne la garantit. Elle ne peut être tenue pour responsable de tout dommage, de quelque
+                                nature que ce soit, résultant du contenu de ces sites ou sources externes, et
+                                notamment des informations, produits ou services qu’ils proposent, ou de tout usage
+                                qui peut être fait de ces éléments. Les risques liés à cette utilisation incombent
+                                pleinement à l'internaute, qui doit se conformer à leurs conditions
+                                d'utilisation.<br>
+                                Les utilisateurs, les abonnés et les visiteurs des sites internet de Natural net ne
+                                peuvent mettre en place un hyperlien en direction de ce site sans l'autorisation
+                                expresse et préalable de [.....].<br>
+                                Dans l'hypothèse où un utilisateur ou visiteur souhaiterait mettre en place un
+                                hyperlien en direction d’un des sites internet de [......], il lui appartiendra
+                                d'adresser un email accessible sur le site afin de formuler sa demande de mise en
+                                place d'un hyperlien. [.....] se réserve le droit d’accepter ou de refuser un
+                                hyperlien sans avoir à en justifier sa décision.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  </div>
+             </div>
+        </div>            
+        
+       
           
        
             
