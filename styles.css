@@ -101,7 +101,7 @@ p{
     padding-bottom: 5vh;
 } 
 #evenement{
-    border: 6px solid rgb(34, 143, 194) ;
+    border: 6px solid rgb(73, 126, 42) ;
     margin-bottom: 10vh;
     text-align: center;
     color: black;
@@ -247,7 +247,7 @@ p{
 
 /*----------------------------footer----------------*/
 footer{
-    background-color: rgb(34, 143, 194);
+    background-color: rgb(73, 126, 42);
     border-top:rgb(0, 0, 0) solid 5px;
 }
 footer h1{
@@ -263,12 +263,12 @@ footer h1{
     text-align: center;
 }
 #paragraphe p{
-    font-size: 3vh;
+    font-size: 5vh;
     padding: 5vh 0 0 10vh
 }
 #text-newsletter p{
-    font-size: 3vh;
-    padding: 5vh 10vh 6vh 0vh;
+    font-size: 5vh;
+    padding: 5vh 5vh 6vh 0vh;
 }
 button.btn.btn-dark{
     margin-left: 8vh;
@@ -311,12 +311,12 @@ iframe{
 #contact h2{
     font-size: 6vh;
     font-weight: 900; 
-    padding-left: 18vh 
+    padding-left: 20vh 
 }
 #contact p{
     font-size: 3vh;
-    text-align: center;
-}
+    margin-left: -30vh;
+}    
 #fb img{
     width: 5vh;
     padding-top: 3vh;
@@ -420,7 +420,7 @@ iframe{
         padding-left: 11vh;
     } 
     #evenement{
-        border: 4px solid rgb(63, 104, 58);   
+        border: 4px solid rgb(73, 126, 42);   
     }
     #evenement p{
         font-size: 2.5vh;
@@ -560,7 +560,7 @@ iframe{
         padding-left: 10vh;
     } 
     #evenement{
-        border:4px solid rgb(84, 148, 75) ;
+        border:4px solid rgb(73, 126, 42) ;
         margin-bottom: 5vh;
         margin-left: 5vh;      
     }
@@ -725,7 +725,7 @@ iframe{
         height: auto;
     }
     #evenement{
-        border: 4px solid rgb(84, 148, 75) ;
+        border: 4px solid rgb(73, 126, 42) ;
         margin-bottom: 7vh;       
     }
     #evenement p{
@@ -901,7 +901,7 @@ iframe{
         padding-bottom: 5vh;
     } 
     #evenement{
-        border: 4px solid rgb(84, 148, 75) ;
+        border: 4px solid rgb(73, 126, 42) ;
         margin-bottom: 4vh;      
     }
     #evenement p{
@@ -958,7 +958,7 @@ iframe{
     }
     #text-newsletter p{
         font-size: 2vh;
-        padding: 3vh 5vh 3vh 4vh;
+        padding: 3vh 5vh 3vh 2vh;
     }
     button.btn.btn-dark{
         margin-left: 4vh;
@@ -979,27 +979,27 @@ iframe{
     }
     #contact h2{
         font-size: 4vh;
-        text-align: center;
-        padding-left: 5vh 
+        padding-left: -15vh
+        
     }
     #contact p{
         font-size: 2vh;
-        text-align: center;
+        padding-left: 30vh;
     }
     #fb img{
         width: 5vh;
         padding-top: 3vh;
     }
     #telephone{
-        padding: 2vh 0 2vh 10vh;
+        padding: 2vh 0 2vh 12vh;
         font-size: 2vh;
     }
     #mail-contact{
-        padding: 0 0 2vh 4vh;
+        padding: 0 0 2vh 10vh;
         font-size: 2vh;
     }
     #mail-commande{
-        padding: 0 0 0vh 3vh;
+        padding: 0 0 0vh 9vh;
         font-size: 2vh;
     }
     
